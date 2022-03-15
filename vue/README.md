@@ -1,1 +1,3 @@
 - [vue官方文档](https://cn.vuejs.org/v2/guide/)
+- [不来看看这些 VUE 的生命周期钩子函数？](https://mp.weixin.qq.com/s/s1QvA9PRAx9RI4jlhvXfbw)
+- [20 道必看的 Vue 面试题](https://mp.weixin.qq.com/s/nfXDsVQ-27UVuLiO65VmAQ)

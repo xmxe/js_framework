@@ -31,13 +31,14 @@
     <!-- 使用 .prevent 阻止默认行为 -->
     <a href="http://www.baidu.com" @click.prevent="linkClick">有问题，先去百度</a>
 
-    <!-- 使用  .capture 实现捕获触发事件的机制 -->
+    <!-- 使用  .capture先执行父级的函数，再执行子级的触发函数(一般用法)，
+      当元素发生冒泡时，先触发带有该修饰符的元素。若有多个该修饰符，则由外而内触发。 -->
     <div class="inner" @click.capture="div1Handler">
       <input type="button" value="戳他" @click="btnHandler">
     </div>
     <br />
     <!-- 使用 .self 实现只有点击当前元素时候，才会触发事件处理函数 -->
-    <div class="inner" @click="div1Handler">
+    <div class="inner" @click.self="div1Handler">
       <input type="button" value="戳他" @click="btnHandler">
     </div>
 
